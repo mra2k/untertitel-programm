@@ -1,72 +1,155 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nutzungsbedingungen – Untertitel-Programm</title>
-<style>
-    body {
-        font-family: "Segoe UI", Arial, sans-serif;
-        max-width: 700px;
-        margin: 60px auto;
-        padding: 0 20px;
-        line-height: 1.6;
-        color: #222;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutzungsbedingungen – Untertitel-Programm</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black: #0f0f0f; --white: #f5f5f0; --accent: #e63946; --gray: #888; --light: #e8e8e3; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--white); color: var(--black); line-height: 1.7; }
+
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 40px; border-bottom: 1px solid var(--light);
+      background: var(--white);
     }
-    h1 {
-        font-size: 24px;
+    .nav-logo { font-size: 18px; font-weight: 700; letter-spacing: -0.5px; text-decoration: none; color: var(--black); }
+    .nav-links a { text-decoration: none; color: var(--gray); font-size: 14px; margin-left: 28px; }
+    .nav-links a:hover { color: var(--black); }
+
+    .container { max-width: 760px; margin: 0 auto; padding: 60px 40px 100px; }
+
+    .page-label {
+      font-size: 12px; font-weight: 600; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 16px;
     }
+    h1 { font-size: 38px; font-weight: 800; letter-spacing: -1px; margin-bottom: 8px; }
+    .meta { font-size: 14px; color: var(--gray); margin-bottom: 48px; }
+    .meta strong { color: var(--black); }
+
     h2 {
-        font-size: 18px;
-        margin-top: 32px;
+      font-size: 20px; font-weight: 700; margin-top: 48px; margin-bottom: 12px;
+      padding-bottom: 8px; border-bottom: 1px solid var(--light);
     }
-    a {
-        color: #0a66c2;
+    h3 { font-size: 16px; font-weight: 700; margin-top: 24px; margin-bottom: 8px; }
+    p { font-size: 15px; color: #333; margin-bottom: 16px; }
+    ul { margin: 0 0 16px 24px; }
+    ul li { font-size: 15px; color: #333; margin-bottom: 8px; }
+    a { color: var(--accent); }
+
+    .highlight-box {
+      background: #fff; border: 1px solid var(--light); border-left: 4px solid var(--accent);
+      border-radius: 4px; padding: 20px 24px; margin: 24px 0;
     }
-    .back {
-        display: inline-block;
-        margin-bottom: 24px;
+    .highlight-box p { margin: 0; font-size: 15px; }
+
+    footer {
+      border-top: 1px solid var(--light); padding: 24px 40px;
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
     }
-</style>
+    footer p, footer a { font-size: 13px; color: var(--gray); text-decoration: none; }
+    footer a:hover { color: var(--black); }
+
+    @media (max-width: 600px) {
+      nav, .container, footer { padding-left: 20px; padding-right: 20px; }
+    }
+  </style>
 </head>
 <body>
 
-<a class="back" href="index.html">&larr; Zurück</a>
+<nav>
+  <a class="nav-logo" href="index.html">Untertitel-Programm</a>
+  <div class="nav-links">
+    <a href="index.html">Startseite</a>
+    <a href="privacy.html">Datenschutz</a>
+  </div>
+</nav>
 
-<h1>Nutzungsbedingungen</h1>
-<p><em>Stand: 2026</em></p>
+<div class="container">
+  <div class="page-label">Rechtliches</div>
+  <h1>Nutzungsbedingungen</h1>
+  <p class="meta">Stand: <strong>Juni 2026</strong> · Verantwortlicher: André, Deutschland</p>
 
-<h2>Beschreibung der Anwendung</h2>
-<p>
-    Das Untertitel-Programm ist eine lokal installierte Anwendung zum
-    automatischen Erstellen, Bearbeiten und Veröffentlichen von
-    Video-Untertiteln. Sie wird für den persönlichen, nicht-kommerziellen
-    Gebrauch durch den Entwickler selbst bereitgestellt.
-</p>
+  <div class="highlight-box">
+    <p>Durch die Nutzung von Untertitel-Programm stimmst du diesen Nutzungsbedingungen zu. Bitte lies sie sorgfältig durch, bevor du das Programm verwendest.</p>
+  </div>
 
-<h2>Nutzung</h2>
-<p>
-    Die Anwendung wird "wie besehen" bereitgestellt. Der Nutzer ist
-    für die von ihm hochgeladenen und veröffentlichten Inhalte selbst
-    verantwortlich, insbesondere im Hinblick auf die Einhaltung der
-    Nutzungsbedingungen der jeweiligen Plattformen (z.B. TikTok,
-    YouTube, Instagram), auf denen Inhalte veröffentlicht werden.
-</p>
+  <h2>1. Über das Programm</h2>
+  <p>Untertitel-Programm ist ein kostenloses, lokal ausgeführtes Desktop-Tool für Windows, das entwickelt wurde um automatisch Untertitel aus Videodateien zu erstellen, zu bearbeiten und in Videos einzubrennen. Das Programm nutzt die TikTok API für optionale Upload-Funktionen.</p>
 
-<h2>Verbindung zu Drittplattformen</h2>
-<p>
-    Die Anwendung kann optional mit externen Plattformen verbunden
-    werden, um Inhalte automatisiert hochzuladen. Diese Verbindung
-    erfolgt ausschließlich über die offiziellen Schnittstellen (APIs)
-    der jeweiligen Plattformen und unterliegt zusätzlich deren eigenen
-    Nutzungsbedingungen.
-</p>
+  <h2>2. Nutzungsrecht</h2>
+  <p>Dir wird ein nicht-exklusives, nicht-übertragbares Recht eingeräumt, das Programm für private und kommerzielle Zwecke zu nutzen. Du darfst:</p>
+  <ul>
+    <li>Das Programm auf deinen eigenen Geräten installieren und nutzen</li>
+    <li>Das Programm für die Erstellung von Video-Content verwenden</li>
+    <li>Fertig produzierte Videos auf Plattformen deiner Wahl veröffentlichen</li>
+  </ul>
+  <p>Du darfst nicht:</p>
+  <ul>
+    <li>Den Quellcode des Programms ohne Genehmigung weitergeben oder kommerziell verkaufen</li>
+    <li>Das Programm für illegale Zwecke oder zur Erstellung rechtswidriger Inhalte verwenden</li>
+    <li>Urheberrechtlich geschütztes Material ohne Genehmigung verarbeiten</li>
+  </ul>
 
-<h2>Haftung</h2>
-<p>
-    Eine Haftung für Schäden, die durch die Nutzung der Anwendung
-    entstehen, ist im gesetzlich zulässigen Rahmen ausgeschlossen.
-</p>
+  <h2>3. TikTok-Integration</h2>
+  <p>Das Programm nutzt die offizielle TikTok API. Für die Nutzung der TikTok-Funktionen gelten zusätzlich:</p>
+  <ul>
+    <li>Die <a href="https://www.tiktok.com/legal/terms-of-service" target="_blank">Nutzungsbedingungen von TikTok</a></li>
+    <li>Die <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank">Datenschutzerklärung von TikTok</a></li>
+    <li>Die <a href="https://developers.tiktok.com/doc/overview" target="_blank">TikTok Developer Terms</a></li>
+  </ul>
+  <p>Du bist selbst verantwortlich dafür, dass alle über das Programm auf TikTok hochgeladenen Inhalte den Nutzungsbedingungen von TikTok entsprechen.</p>
+
+  <h2>4. Inhalte und Urheberrecht</h2>
+  <p>Du bist allein verantwortlich für alle Inhalte (Videos, Audio, Texte), die du mit dem Programm verarbeitest und veröffentlichst. Du sicherst zu, dass:</p>
+  <ul>
+    <li>Du die notwendigen Rechte an den von dir verarbeiteten Inhalten besitzt</li>
+    <li>Die von dir veröffentlichten Inhalte keine Rechte Dritter verletzen</li>
+    <li>Die Inhalte nicht gegen geltende Gesetze verstoßen</li>
+    <li>Die Inhalte keine Hassrede, Gewaltdarstellungen oder illegales Material enthalten</li>
+  </ul>
+
+  <h2>5. Haftungsausschluss</h2>
+  <h3>5.1 Gewährleistungsausschluss</h3>
+  <p>Das Programm wird "wie besehen" (as-is) ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt. Der Entwickler übernimmt keine Garantie dafür, dass das Programm fehlerfrei funktioniert, ununterbrochen verfügbar ist oder für einen bestimmten Zweck geeignet ist.</p>
+
+  <h3>5.2 Haftungsbeschränkung</h3>
+  <p>Der Entwickler haftet nicht für:</p>
+  <ul>
+    <li>Datenverlust oder Beschädigung von Dateien durch die Nutzung des Programms</li>
+    <li>Schäden die durch die Nutzung oder Nichtnutzbarkeit des Programms entstehen</li>
+    <li>Inhalte die Nutzer über das Programm auf TikTok oder anderen Plattformen veröffentlichen</li>
+    <li>Änderungen oder Unterbrechungen der TikTok API die die Funktionalität des Programms beeinträchtigen</li>
+    <li>Verluste durch Fehler in der automatischen Spracherkennung</li>
+  </ul>
+
+  <h3>5.3 KI-generierte Inhalte</h3>
+  <p>Die automatische Spracherkennung basiert auf dem KI-Modell OpenAI Whisper. Die generierten Untertitel können Fehler enthalten. Es liegt in deiner Verantwortung, die automatisch generierten Untertitel vor der Veröffentlichung zu prüfen und zu korrigieren.</p>
+
+  <h2>6. Verfügbarkeit</h2>
+  <p>Da das Programm lokal auf deinem PC läuft, ist es von deiner eigenen Hardware unabhängig von externen Servern des Entwicklers. Die TikTok-Upload-Funktionen sind jedoch von der Verfügbarkeit der TikTok API abhängig, auf die der Entwickler keinen Einfluss hat.</p>
+
+  <h2>7. Änderungen des Programms</h2>
+  <p>Der Entwickler behält sich das Recht vor, das Programm jederzeit zu ändern, zu aktualisieren oder einzustellen. Neue Versionen können geänderte Funktionen oder Anforderungen haben.</p>
+
+  <h2>8. Änderungen der Nutzungsbedingungen</h2>
+  <p>Diese Nutzungsbedingungen können bei Bedarf aktualisiert werden. Die aktuelle Version ist stets auf dieser Seite abrufbar. Durch die weitere Nutzung des Programms nach einer Änderung stimmst du den aktualisierten Bedingungen zu.</p>
+
+  <h2>9. Anwendbares Recht</h2>
+  <p>Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand ist, soweit gesetzlich zulässig, der Wohnsitz des Entwicklers.</p>
+
+  <h2>10. Kontakt</h2>
+  <p>Bei Fragen zu diesen Nutzungsbedingungen kannst du uns über das GitHub-Repository kontaktieren: <a href="https://github.com/mra2k/untertitel-programm">github.com/mra2k/untertitel-programm</a></p>
+</div>
+
+<footer>
+  <p>© 2026 Untertitel-Programm</p>
+  <div>
+    <a href="index.html">Startseite</a> &nbsp;·&nbsp;
+    <a href="privacy.html">Datenschutzerklärung</a>
+  </div>
+</footer>
 
 </body>
 </html>
